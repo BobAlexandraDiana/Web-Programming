@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="bibliography.xsl"?>
+<bibliographies>
+  <bibliography category="Article">
+		<title> The story of Jane Austen </title>
+		<author>Martin</author>
+		<year>2012</year>
+	</bibliography> 
+
+	<bibliography category="Book">
+		<title> Evolution of music </title>
+		<author>Martin</author>
+		<year>2016</year>
+	</bibliography>
+
+	<bibliography category="Book report">
+		<title> Unknown facts about Cleopatra </title>
+		<author>Martin</author>
+		<year>2008</year>
+	</bibliography>
+
+    <bibliography category="Web link">
+		<title> Truths and Mits - great writers </title>
+		<author>Martin</author>
+		<year>2014</year>
+	</bibliography>
+
+  <bibliography category="Book">
+		<title> Queen Diana </title>
+		<author>Christian May</author>
+		<year>2014</year>
+  </bibliography>
+</bibliographies>

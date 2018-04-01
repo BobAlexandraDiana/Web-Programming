@@ -1,0 +1,2 @@
+# Laboratory 4
+List by using XSLT all bibliography entries (articles, books reports, presentations, web link, software package) from an XML document which have a given author. The list has to be ordered alphabetically by title. You should also use at least 6 Bootstrap CSS classes for displaying the bibliography entries.
