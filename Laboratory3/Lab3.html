@@ -1,0 +1,512 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Visit | UCLA</title>
+        <style>
+            .entireSpace
+            {
+                width:100%;
+                height:100%;
+                position:absolute;
+                top:0px;
+                left:0px;
+                right:0px;
+            }
+            /* The header of the page. */
+            #header
+            {
+                width:100%;
+                height: 30px;
+                background-color: #93d3eb;
+            }
+            .menuHeader
+            {
+                width:600px;
+                font-family: 'ProximaNova','Verdana', 'sans-serif';
+                color:  #1e4b87;
+                font-weight: 550;
+                font-size: 0.60em;
+                margin-left: 390px;
+                position:absolute;
+                margin-top:11px;
+            }
+            .weather
+            {
+            
+                font-family: 'ProximaNova','Verdana', 'sans-serif';
+                color:  #1e4b87;
+                font-weight: 600;
+                font-size: 0.65em;
+                margin-left: 180px;
+                position:absolute;
+                margin-top: 9px;
+            }
+            .imgg
+            {
+                width:20px;
+                height:20px;
+                margin-top:7px;
+                margin-left:157px;
+            }
+            .navBox1
+            {
+                border-style: thin;
+                background-color: #ffe800;
+                border-top: 4px solid #ffb300;
+                box-shadow: 0 0.1px 0.1px #666;
+                position:absolute;
+
+                height: 25px;
+                width:72px;
+
+                margin-left: 870px;
+                margin-top:-27px;
+
+                text-align:center;
+                font-family: 'ProximaNova','Verdana', sans-serif;
+                font-size: 0.8em;
+                font-weight: 500;
+                padding-top: 1em;
+                text-shadow: 1px 1px #949494;
+            }
+            .navBox2
+            {
+                border-style: thin;
+                background-color: #ffe800;
+                border-top: 4px solid #ffb300;
+                box-shadow: 0 0.1px 0.1px #666;
+                position:absolute;
+
+                height: 25px;
+                width:72px;
+
+                margin-left: 943px;
+                margin-top:-27px;
+
+                text-align:center;
+                font-family: 'ProximaNova','Verdana', sans-serif;
+                font-size: 0.8em;
+                font-weight: 500;
+                padding-top: 1em;
+                text-shadow: 1px 1px #949494;
+            }
+             .navBox3
+            {
+                border-style: thin;
+                background-color: #ffe800;
+                border-top: 4px solid #ffb300;
+                box-shadow: 0 0.1px 0.1px #666;
+                position:absolute;
+
+                height: 25px;
+                width:72px;
+
+                margin-left: 1016px;
+                margin-top:-27px;
+
+                text-align:center;
+                font-family: 'ProximaNova','Verdana', sans-serif;
+                font-size: 0.8em;
+                font-weight: 500;
+                padding-top: 1em;
+                text-shadow: 1px 1px #949494;
+            }
+            /* The section under the header*/
+            #header2
+            {
+                width:100%;
+                height: 110px;
+                background-color: #2c5e91;
+                border-bottom-color: rgb(23, 36, 76);
+                border-bottom-style:  solid;
+                border-bottom-width: 1px;
+                font-family: 'ProximaNova','Verdana', sans-serif
+            }
+            .logo
+            {
+                height:60px;
+                width:140px;
+                margin-top:20px;
+                margin-left:150px;
+            }
+            .menu
+            {
+                height: 300px;
+                width: 100%;
+                margin-top: 10px;
+
+                color: white;
+                font-family: 'ProximaNova',Verdana, sans-serif;
+                text-indent: 250px;
+                font-size: 12px;
+            }
+            .googleSearch
+            {
+                height: 25px;
+                width: 215px;
+
+                background-color: white;
+
+                border: 1px solid #D9D9D9;
+                border-bottom-color:rgb(217, 217, 217);
+                border-bottom-style: solid;
+                border-bottom-width: 2px;
+
+                border-left-color:rgb(217, 217, 217);
+                border-left-style: solid;
+                border-left-width: 2px;
+
+                border-top-color:rgb(217, 217, 217);
+                border-top-style: solid;
+                border-top-width: 2px;
+
+                border-right-color:rgb(217, 217, 217);
+                border-right-style: solid;
+                border-right-width: 2px;
+
+                border-collapse: collapse;
+                margin-top: -350px;
+                margin-left: 870px;
+            }
+            .googleText
+            {
+                margin-top: -22px;
+                margin-left: 882px;
+                border-color: red;
+
+                color: #C7C7C7;
+                font-family: 'ProximaNova', 'Arial', sans-serif;
+                font-size: 14;
+
+            }
+            .googleText2
+            {
+                margin-top: -16px;
+                margin-left: 932px;
+                border-color: red;
+
+                color: #949494;
+                font-family: 'ProximaNova', 'Arial', sans-serif;
+                font-size: 14;
+            }
+            #searchImg
+            {
+                width:37px;
+                height: 26px;
+                margin-left: 1050px;
+                margin-top: -22px;
+            }
+            /*Main page*/
+            #mainPage
+            {
+                width:1000%;
+                height: 685px;
+              
+            }
+            .mainImage
+            {
+                position:absolute;
+                width:100%;
+                height: 685px;
+            }
+            .articleTitleImg
+            {
+                position:absolute;
+                margin-left: 450px;
+                margin-top: 40px;
+            }
+            .article
+            {
+                width: 600px;
+                height:545px;
+                background-color:#335f8f;
+
+                position:absolute;
+                margin-top:120px;
+                margin-left:510px;
+
+            }
+            .textArticle
+            {
+                color: white;
+                font-size: 13px;
+                font-family: 'ProximaNova', 'Verdana', sans-serif;
+                font-style: normal;
+                font-variant: normal;
+                font-variant-ligatures: normal;
+                font-weight: 400;
+                position: absolute;
+                margin-left: 20px;
+                vertical-align: baseline;
+                font-stretch: 100%;
+                line-height: 19.6px;
+            }
+            .mapArticle
+            {
+                width: 270px;
+                margin-top:200px;
+                margin-left:350px;
+            }
+            .list1
+            {
+                position:absolute;
+                margin-top: 70px;
+                line-height: 19.6px;
+                color: #00ff87;
+                font-size:13px;
+                font-family: 'ProximaNova', 'Verdana', sans-serif;
+
+            }
+            .list2
+            {
+                position:absolute;
+                margin-top: 70px;
+                margin-left: 190px;
+                line-height: 19.6px;
+                color: #00ff87;
+                font-family: 'ProximaNova', 'Verdana', sans-serif;
+                font-size:13px;
+
+            }
+            .list3
+            {
+                position:absolute;
+                margin-top: 70px;
+                margin-left: 390px;
+                line-height: 19.6px;
+                color: #00ff87;
+                font-size:13px;
+                font-family: 'ProximaNova', 'Verdana', sans-serif;
+                font-weight: 500;
+            }
+            ul
+            {
+                list-style:none;
+            }
+            li::before
+            {
+                content: "•  ";
+                color:white;
+                font-size:20px;
+            }
+
+            /* Footer*/
+            #Footer
+            {
+                width: 100%;
+                height: 420px;
+                background-color: #2b4886;
+            }
+            .resources
+            {
+                position:absolute;
+                margin-left: 470px;
+                margin-top: 30px;
+            }
+            .logoImg
+            {
+                position:absolute;
+                margin-left: 180px;
+                margin-top: 110px;
+            }
+            .footerList1
+            {
+                font-family: 'ProximaNova', 'Verdana', sans-serif;
+                color: #ffe800;
+                font-size: 13px;
+                line-height: 25px;
+                position:absolute;
+                margin-top:135px;
+                margin-left: 380px;
+            }
+            .footerList2
+            {
+                font-family: 'ProximaNova', 'Verdana', sans-serif;
+                color: #ffe800;
+                font-size: 13px;
+                line-height: 25px;
+                position:absolute;
+                margin-top:135px;
+                margin-left: 600px;
+            }
+            .footerList3
+            {
+                font-family: 'ProximaNova', 'Verdana', sans-serif;
+                color: #ffe800;
+                font-size: 13px;
+                line-height: 25px;
+                position:absolute;
+                margin-top:135px;
+                margin-left: 880px;
+            }
+            .information
+            {
+                font-family: "ProximaNova", Verdana, 'sans-serif';
+                color:#acc1e5;
+                position:absolute;
+                margin-top:100px;
+                margin-left: 380px;
+                font-size:15px;
+                font-weight: 600px;
+            }
+            .campusValues
+            {
+                font-family: 'ProximaNova', 'Verdana', sans-serif;
+                color:#acc1e5;
+                position:absolute;
+                margin-top:100px;
+                margin-left: 600px;
+                font-size:15px;
+                font-weight: 600px;
+               
+            }
+            .eventVenues
+            {
+                font-family: 'ProximaNova', 'Verdana', sans-serif;
+                color:#acc1e5;
+                position:absolute;
+                margin-top:100px;
+                margin-left: 880px;
+                font-size:15px;
+                font-weight: 600px;
+            }
+            .copyright
+            {
+                color: white;
+                font-size: 12px;
+                font-family: 'ProximaNova', 'Verdana', sans-serif;
+                position:absolute;
+                margin-top:370px;
+                margin-left:180px;
+            }
+            .rights
+            {
+                font-family: 'ProximaNova', 'Verdana', sans-serif;
+                color: #ffe800;
+                font-size: 12px;
+                position:absolute;
+                margin-top:370px;
+                margin-left:322px;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="entireSpace">
+
+        <div id="header">
+            <div class="menuHeader"> Prospective Students | Current Students | Faculty | Staff | Alumni | Parents & Families </div>
+            <div class="weather"> 52<sup>o </sup> and Fog </div>
+            <div class="imgSun"> <img src="moon.png" class="imgg"> </div>
+            <div class="navBox1"> VISIT </div>
+            <div class="navBox2"> APPLY </div>
+            <div class="navBox3"> GIVE </div>
+        </div>
+
+        <div id="header2">
+            <div> <img src="whitelab-logo.png" class="logo"> </div>
+            <div class="menu"> ABOUT | ACADEMICS | ADMISSION | ULCA IN THE COMMUNITY | THE ARTS | CAMPUS LIFE | HEALTH SYSTEM | RESEARCH | ATHLETICS </div>
+            <div class="googleSearch"></div>
+            <div class="googleText"> Google </div>
+            <div class="googleText2"> Custom Search </div>
+            <div class="searchImage"> <img src="search.png" id="searchImg"> </div>
+        </div>
+
+        <div id="mainPage">
+            <img src="landing.jpg" class="mainImage">
+            <img src="mainArticleTitle.png" class="articleTitleImg">
+            <div class="article">
+                    <p class="textArticle">Nothing written here can compare with actually stepping on campus. 
+                      There really <br> aren't words to describe the aura of optimism that bubbles from every 
+                      twist and turn <br> of our inspiring campus. There is no substitute for speaking to 
+                      the students and <br>faculty, and the feeling you get that not only can we make 
+                      tomorrow better—we will.
+                    <br>
+                    <br>
+                       You have to experience UCLA to understand it. You have to feel the activity
+                        while strolling through the center of campus—alive with 1,000+ clubs
+                         and organizations. You have to step inside the labs and libraries,
+                          studios and classrooms. If you can't visit in person, spend a little
+                           time with the Virtual Tour.
+                    <br>
+                    <br>
+                        And if you're new to Los Angeles, don't forget to  <br>explore our global city.
+                         From Rodeo Drive to <br> Sunset Boulevard to the world famous beaches <br> of
+                          Santa Monica and Malibu, you can <br> experience everything from natural wonders to<br> 
+                          premier shopping, sample every kind of food and enjoy arts and events in the<br>
+                           entertainment capital of the world.
+                    </p>
+
+                    <div> <img src="map.png" class="mapArticle"> </div>
+
+                    <ul class="list1">
+                        <li> Directions </li>
+                        <li> Campus Map </li>
+                        <li> Parking on Campus </li>
+                        <li> Campus Tours </li>
+                        <li> Virtual Tour </li>
+                        <li> Luskin Conference <br> Center </li>
+                        <li> Guest House </li>
+                    </ul>
+
+                    <ul class="list2">
+                        <li> International Visitors </li>
+                        <li> Residence Hall Tour </li>
+                        <li> Fowler Museum of <br> Cultural History </li>
+                        <li> Hammer Museum </li>
+                        <li> Center of the Art <br> Performance </li>
+                        <li> Meteorite Gallery</li>
+                    </ul>
+
+                    <ul class="list3">
+                        <li> Athelics Hall of Fame </li>
+                        <li> Botanical Garden </li>
+                        <li> Sculpture Garden </li>
+                        <li> Planetarium </li>
+                        <li> Store </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="Footer">
+                <img src="resources.png" class="resources">    
+                <img src="logo.png" class="logoImg">
+
+                <div class="footerList1">
+                    Careers <br>
+                    Directory <br>
+                    Contact <br>
+                    Academic Calendar <br>
+                    Maps,Directions <br>
+                    Parking & Transportation <br>
+                    Emergency <br>
+                </div>
+
+                <div class="footerList2">
+                    Equity, Diversity & Inclusion <br>
+                    Environment & Sustainability <br>
+                    True Bruin Statement <br>
+                    Volunteerism <br>
+                </div>
+
+                <div class="footerList3">
+                    Luskin Conference Center <br>
+                    Event Planning <br>
+                    Film Production <br>
+                </div>
+
+                <div class="information"> INFORMATION </div>
+                <div class="campusValues"> CAMPUS VALUES </div>
+                <div class="eventVenues"> EVENT VENUES </div>
+
+                <div class="copyright">
+                    ©2018 Regents of the &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp | &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp |
+                </div>
+
+                <div class="rights">
+                    University of California &nbsp &nbsp &nbsp Terms of Use &nbsp &nbsp &nbsp Accessibillity
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
