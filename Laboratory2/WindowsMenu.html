@@ -1,0 +1,224 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title> Windows </title> 
+    <style type="text/css">
+    #content
+    {
+        background: url("1st.jpg");
+        background-size: 1720px 720px;
+        width: 100%;
+        height: 705px;
+        margin-left:0px;
+    }
+    .mainPage
+    {
+        width: 100%;
+        height: 650px;
+        margin-left: 0px;  
+    }
+    .footer
+    {
+        width: 100%;
+        height: 40px;
+        background-color: #00334d;
+        background-size: 1270px 690px;
+    }
+    .emptySpace
+    {
+        width: 100%;
+        height: 150px;
+    }
+    .placeLittleWindow
+    {
+        width: 100%;
+        height: 490px;
+    }
+
+    .littleWindowLeft
+    {
+        background-color:white; 
+        border-style: solid;
+        border-width: 15px 10px 8px 10px;
+        border-color:#002233;
+        width: 300px;
+        height: 490px;
+        display: table-cell;
+        list-style: none;
+    }
+    .littleWindowLeft ul
+    {
+        list-style: none;
+        margin:0;
+    }
+    .littleWindowLeft ul li
+    {
+        padding:15px;
+        position: relative;
+        width: 150px;        
+        background-color: white;
+    }
+    .littleWindowLeft ul ul
+    {
+        transition: all 0.3s;
+        opacity:0;
+        position: absolute;
+        visibility:hidden;
+        left:80%;
+        top: -2%;
+    }
+    .littleWindowLeft ul li:hover > ul
+    {
+
+        opacity: 1;
+        visibility: visible;
+    }
+    .littleWindowLeft ul li a
+    {
+        color: black;
+        text-decoration: none;
+    }
+    .littleWindowRight
+    {
+        border-style: solid;
+        border-width: 10px 10px 8px 10px;
+        border-color:#002233;
+        background-color: #002233;
+        width: 200px;
+        height: 490px;
+        display: table-cell;
+    }
+    #p1 
+    {
+        color: white;
+        text-shadow: 2px 2px 4px red;
+    }
+    #p2
+    {
+        color: white;
+        text-shadow: 2px 2px;
+
+    }
+    #p3
+    {
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px purple, 0 0 5px white;
+    }
+
+    #p4
+    {
+        color: white;
+        text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+
+    }
+    #p5
+    {
+        color: white;
+        text-shadow: 0 0 3px red;
+    }
+    #p6
+    {
+        color: white;
+        text-shadow: 0 0 20px rgb(254,252,201) , 10px -10px 30px yellow , -20px -20px 40px orange , 20px -40px 50px orangered , -20px -60px 60px red , 0 -80px 70px brown , 10px -90px 80px burlywood ;
+
+    }
+    #l1
+    {
+        color: red;
+        text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+    }
+
+    #p10
+    {
+        text-shadow: 0 1px 3px red;
+
+    }
+    body
+    {
+         margin:0px;
+    }
+
+    li:hover
+    {
+        text-decoration: underline;
+    }
+
+    .c:hover{
+        cursor:progress;
+    }
+    </style>
+</head> 
+<body>
+    <div id="content">
+        <div class="mainPage">
+            <div class="emptySpace"> </div>
+            <div class="placeLittleWindow">
+
+                <div class="littleWindowLeft"> <br><br>
+                    <ul>
+                        <li><a href="#" id="l1" > Getting Started </a>
+                            <ul>
+                                <li><a href=""> Help </a>
+                                    <ul>
+                                        <li> <div class="c"> Online Support </div> </li>
+                                        <li> <div class="c"> Offlien Support </div> </li>
+                                    </ul>
+                                </li>
+                                    
+                                <li> <a href=""> As a guest </a>
+                                    <ul>
+                                        <li> <a href=""> Already have a Guest Account </a> </li>
+                                        <li> <a href=""> Create Guest Account </a>
+                                            <ul>
+                                                <li> <a href=""> Help </a> </li>
+                                                <li> <a href=""> Create Account </a> </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li> <a href=""> Start Configuration </a> </li>
+                            </ul>
+                        </li>
+                        <li> <a href="#"> Windows Media Center</a> </li>
+                        <li> <a href=""> Calculator </a> </li>
+                        <li> <a href="">Sticky Notes</a> </li>
+                        <li> <a href="">Snipping Tool</a> </li>
+                        <li> <a href="">Steam</a> </li>
+                        <li> <a href="">Magnifier</a> </li>
+                        <li> <a href="">Solitaire</a> </li>
+                    </ul>
+                </div>
+
+                <div class="littleWindowRight">
+                    <br>
+                    <center> <img src="2nd.jpeg" alt="User"> </center>
+                    <p id="p1" align="center"> Administrator <br></p>
+                    <p id="p2" align="center"> Documents <br> </p>
+                    <p id="p3" align="center"> Pictures <br> </p>
+                    <p id="p4" align="center"> Music <br> </p>
+                    <p id="p5" align="center"> Games <br> </p>
+                    <p id="p10" align="center"> Computer <br> </p>
+                    <p id="p6" align="center"> Control Panel <br> </p>
+                    <p id="p7" align="center"> Devices and Printers <br> </p>
+                    <p id="p8" align="center"> Default Programs <br> </p>
+                    <p id="p9" align="center"> Help and Support <br> </p>
+                </div>         
+            </div>
+        </div>
+        <div class="footer">
+            <img src="3rd.png" alt="Windows Button" height="39" width="39" align="left" >
+            <img src="4th.png" alt="Internet Explorer" height="35" width="35" align="left">
+            <img src="5th.png" alt="File Explorer" height="35" width="35" align="left">
+            <img src="6th.png" alt="VLC" height="35" width="35" align="left">
+            <img src="7th.png" alt="Visual" height="35" width="35" align="left">
+            <img src="8th.png" alt="Sound icon" height="25" width="25" align="right">
+            <img src="9th.png" alt="Network icon" height="35" width="35" align="right">
+            <p align="right"> 
+                <b> 10:00 pm </b> <br>
+                <b> 17/03/2018 </b>
+            </p>
+        </div>
+    </div>
+</body>
+</html>     
