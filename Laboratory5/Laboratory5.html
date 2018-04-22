@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+    <title>Laboratory 5</title>
+    <style>
+        #counties
+        {
+            margin-left: 450px;
+            margin-top: 250px;
+
+            width:180px;
+            height:30px;
+
+            font-size:20px;
+
+            border: solid;
+            border-color: #4d0000;
+            background: linear-gradient(to right,#ff8080,#ffb3b3,#ffcccc);
+        }
+
+        #cities
+        {
+            width:180px;
+            height:30px;
+
+            font-size:20px;
+
+            border: solid;
+            border-color: #4d0000;
+            background: linear-gradient(to left,#ff8080,#ffb3b3,#ffcccc);        }
+    </style>
+</head>
+
+<body>   
+    <select id="counties" onchange="ChangeCitiesList()"> 
+            <option value="">Counties</option> 
+    </select> 
+
+    <select id="cities">
+            <option value="">Cities</option> 
+    </select> 
+
+    <script>
+            var pair = {
+                    0: ['Beclean', 'Bistrița', 'Năsăud'],
+                    1: ['Oradea', 'Aleșd'],
+                    2: ['Cluj-Napoca', 'Dej','Huedin'],
+                    3: ['Iași', 'Târgu Frumos', 'Pașcani'],
+                    4: ['Sibiu', 'Mediaș', 'Dumbrăveni', 'Ocna Sibiului'],
+                    5: ['Gura-Humorului', 'Suceava','Frasin', 'Liteni','Mihăilești']
+            }
+            var count = {
+                    0: "Bistrița-Năsăud",
+                    1: "Bihor",
+                    2: "Cluj",
+                    3: "Iași",
+                    4: "Sibiu",
+                    5: "Suceava"
+            }
+
+            populate();
+            function populate()
+            {
+                    for (var countt in count)
+                    {
+                        document.getElementById("counties").options.add( new Option(count[countt],countt) );
+                    }
+            }
+            function ChangeCitiesList() 
+            {      
+                    
+                    var listOfCounties = document.getElementById("counties");
+
+                    var listOfCities = document.getElementById("cities");
+                    
+                    var currentCounty = listOfCounties.options[listOfCounties.selectedIndex].value;
+                    while (listOfCities.options.length) 
+                    {
+                        listOfCities.remove(0);
+                    }
+
+                    var countiess = pair[currentCounty];
+                    if (countiess) 
+                    {
+                        var i;
+                        for (i = 0; i < countiess.length; i++) 
+                        {
+                            var county = new Option(countiess[i], i);
+                            listOfCities.options.add(county);
+                        }
+                    }
+            } 
+    </script>
+</body>
+</html>

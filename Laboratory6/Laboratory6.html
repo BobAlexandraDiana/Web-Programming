@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+    <style>
+        .mainSpace
+        {
+            width: 600px;
+            margin-top: 80px;
+            margin-left:250px;
+            padding: 10px 55px 40px;
+            background-color: skyblue;
+            border: 15px solid white;
+            box-shadow: 0 0 10px;
+            border-radius: 2px;
+            font-size: 15px;
+        }
+
+        input[type=text], input[type=password]
+        {
+            width: 300px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-left: 150px;
+            margin-top: 40px;
+        }
+        label
+        {
+            position: relative;
+            top: 35px;
+            margin-left:150px;
+        }
+        #btn
+        {
+            padding: 10px 15px;
+            background-color: hotpink;
+            border-radius:4px;
+            color: white;
+            font-weight: bold;
+            margin-left: 250px;
+            position: relative;
+            top: 20px;
+        }
+        .popUpWindow{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 100px;
+            margin-left:400px;
+            top:210px;
+            padding: 10px 55px 40px;
+            background-color: aliceblue;
+            border: 5px solid white;
+            box-shadow: 0 0 10px;
+            border-radius: 2px;
+            font-size: 12px;
+            display: none;
+        }
+        #firstNamePop,#lastNamePop,#eMailPop,#usernamePop,#pswdPop{
+            width: 250px;
+            padding: 10px 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+            margin-left: 30px;
+            margin-top: 0px;
+        }
+        .labelPop
+        {
+            top: 0px;
+            margin-left:30px;
+        }
+        #btnPop
+        {
+            padding: 10px 15px;
+            background-color: gray;
+            border-radius:4px;
+            color: white;
+            font-weight: bold;
+            margin-left: 120px;
+            position: relative;
+            top: 10px;
+        }
+        #close
+        {
+            font-weight: bold;
+            font-size: 35px;
+            position: absolute;
+            margin-left: 130px;
+            margin-top: -300px;
+        }
+        #close:hover
+        {
+            color:red;
+        }
+        #btnPop:hover{
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="mainSpace">
+
+        <label><b>First Name</b></label>
+        <input type="text" placeholder="Enter first name" name="firstName" id="firstName">
+
+        <label ><b>Last Name</b></label>
+        <input type="text" placeholder="Enter last name" name="lastName" id="lastName">
+
+        <label ><b>E-mail</b></label>
+        <input type="text" placeholder="Enter e-mail" name="eMail" id="eMail">
+
+        <label ><b>Username</b></label>
+        <input type="text" placeholder="Enter username" name="Username" id="username">
+
+        <label ><b>Password</b></label> <br>
+        <input type="password" placeholder="Enter password" name="pswd" id="pswd">
+
+        <button type="submit" id="btn">LOGIN</button>
+    </div>
+
+    <div class="popUpWindow">
+
+        <label class="labelPop"><b>First Name</b></label>
+        <input type="text" name="firstNamePop" id="firstNamePop">
+
+        <label class="labelPop"><b>Last Name</b></label>
+        <input type="text" name="lastNamePop" id="lastNamePop">
+
+        <label class="labelPop"><b>E-mail</b></label>
+        <input type="text"  name="eMailPop" id="eMailPop">
+
+        <label class="labelPop"><b>Username</b></label>
+        <input type="text"  name="UsernamePop" id="usernamePop">
+
+        <label class="labelPop" ><b>Password</b></label> <br>
+        <input type="password" name="pswdPop" id="pswdPop">
+
+        <button type="submit" id="btnPop">SUBMIT</button >
+
+        <span id="close"> &times </span>
+    </div>
+
+    <script>
+        $(document).ready();
+        $("#btn").on('click', function(){
+
+            $(".popUpWindow").fadeIn('slow');
+
+            $("#firstName").prop('disabled',true);
+            $("#lastName").prop('disabled', true);
+            $("#eMail").prop('disabled', true);
+            $("#username").prop('disabled', true);
+            $("#pswd").prop('disabled', true);
+
+
+            $("#firstNamePop").val($("#firstName").val());
+            $("#lastNamePop").val($("#lastName").val());
+            $("#eMailPop").val($("#eMail").val());
+            $("#usernamePop").val($("#username").val());
+            $("#pswdPop").val($("#pswd").val());
+        });
+
+        $("#btnPop").on('click', function(){
+
+            $("#firstName").val($("#firstNamePop").val());
+            $("#lastName").val($("#lastNamePop").val());
+            $("#eMail").val($("#eMailPop").val());
+            $("#username").val($("#usernamePop").val());
+            $("#pswd").val($("#pswdPop").val());
+
+            $("#firstName").prop('disabled',false);
+            $("#lastName").prop('disabled', false);
+            $("#eMail").prop('disabled', false);
+            $("#username").prop('disabled', false);
+            $("#pswd").prop('disabled', false);
+
+            $(".popUpWindow").fadeOut('slow');
+
+        });
+
+        $("#close").on('click', function(){
+
+            $("#firstName").prop('disabled',false);
+            $("#lastName").prop('disabled', false);
+            $("#eMail").prop('disabled', false);
+            $("#username").prop('disabled', false);
+            $("#pswd").prop('disabled', false);
+
+            $(".popUpWindow").fadeOut('slow');
+
+        });
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>
